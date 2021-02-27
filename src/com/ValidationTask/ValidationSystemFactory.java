@@ -1,5 +1,5 @@
 package com.ValidationTask;
 
-public interface ValidationSystemFactory<T> {
+public interface ValidationSystemFactory {
     ValidationSystem createValidationSystem();
 }

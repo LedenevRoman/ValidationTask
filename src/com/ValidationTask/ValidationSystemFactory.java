@@ -2,7 +2,7 @@ package com.ValidationTask;
 
 public class ValidationSystemFactory {
 
-    public Validator createValidationSystemFactoryByType(Object o) {
+    public Validator createValidatorByType(Object o) {
         if (o instanceof String) {
             return new StringValidator();
         }

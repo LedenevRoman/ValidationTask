@@ -1,5 +1,5 @@
 package com.ValidationTask;
 
-public interface ValidationSystem<T> {
+public interface Validator<T> {
     boolean validate(T t);
 }

@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class ValidationSystemFactory {
     private final static HashMap<Class, Validator> CLASS_VALIDATOR_HASH_MAP = new HashMap<>();
 
-    {
+    static {
         CLASS_VALIDATOR_HASH_MAP.put(String.class, new StringValidator());
         CLASS_VALIDATOR_HASH_MAP.put(Integer.class, new IntegerValidator());
         CLASS_VALIDATOR_HASH_MAP.put(Boolean.class, new BooleanValidator());

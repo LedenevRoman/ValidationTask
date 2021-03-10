@@ -3,7 +3,7 @@ package com.ValidationTask;
 import java.util.HashMap;
 
 public class ValidationSystemFactory {
-    private final static HashMap<Class, Validator> CLASS_VALIDATOR_HASH_MAP = new HashMap<>();
+    private static final HashMap<Class, Validator> CLASS_VALIDATOR_HASH_MAP = new HashMap<>();
 
     static {
         CLASS_VALIDATOR_HASH_MAP.put(String.class, new StringValidator());

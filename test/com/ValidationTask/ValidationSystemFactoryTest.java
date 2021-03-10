@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class ValidationSystemFactoryTest {
     private ValidationSystemFactory validationSystemFactory;
-    private static final String STRING_WITH_UPPERCASE_FISRT_LETTER = "Aloha";
+    private static final String STRING_WITH_UPPERCASE_FIRST_LETTER = "Aloha";
     private static final String STRING_WITH_LOWERCASE_FIRST_LETTER = "alOha";
     private static final int ZERO = 0;
     private static final int FIVE = 5;
@@ -31,8 +31,8 @@ public class ValidationSystemFactoryTest {
 
     @Test
     public void validateStringWithUpperCaseFirstLetter() {
-        boolean actual = validationSystemFactory.createValidatorByType(STRING_WITH_UPPERCASE_FISRT_LETTER)
-                .validate(STRING_WITH_UPPERCASE_FISRT_LETTER);
+        boolean actual = validationSystemFactory.createValidatorByType(STRING_WITH_UPPERCASE_FIRST_LETTER)
+                .validate(STRING_WITH_UPPERCASE_FIRST_LETTER);
         Assert.assertTrue(actual);
     }
 
